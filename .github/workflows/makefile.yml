@@ -16,4 +16,4 @@ jobs:
       uses: bazelbuild/setup-bazelisk@v2.0.0
             
     - name: Install dependencies
-      run: make build
+      run: bazel build //src/envoy:envoy
